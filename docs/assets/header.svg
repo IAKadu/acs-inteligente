@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="ACS Inteligente — Claude Impact Lab Rio 2026">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A2540"/>
+      <stop offset="50%" stop-color="#0F3D6E"/>
+      <stop offset="100%" stop-color="#0B6FB8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F8C246"/>
+      <stop offset="100%" stop-color="#F26B3A"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#F26B3A" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#F26B3A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bg)"/>
+
+  <g opacity="0.18" stroke="#FFFFFF" stroke-width="0.5" fill="none">
+    <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200 M0 300 H1200"/>
+    <path d="M120 0 V360 M240 0 V360 M360 0 V360 M480 0 V360 M600 0 V360 M720 0 V360 M840 0 V360 M960 0 V360 M1080 0 V360"/>
+  </g>
+
+  <g transform="translate(870 80)" opacity="0.85">
+    <circle cx="0" cy="0" r="60" fill="url(#pulse)">
+      <animate attributeName="r" values="50;70;50" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.55;0.25;0.55" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="6" fill="#F8C246" filter="url(#glow)"/>
+
+    <circle cx="120" cy="60" r="40" fill="url(#pulse)" opacity="0.6"/>
+    <circle cx="120" cy="60" r="4" fill="#F8C246" filter="url(#glow)"/>
+
+    <circle cx="60" cy="160" r="50" fill="url(#pulse)" opacity="0.55"/>
+    <circle cx="60" cy="160" r="5" fill="#F8C246" filter="url(#glow)"/>
+
+    <circle cx="180" cy="180" r="30" fill="url(#pulse)" opacity="0.5"/>
+    <circle cx="180" cy="180" r="3" fill="#F8C246" filter="url(#glow)"/>
+  </g>
+
+  <g transform="translate(70 110)">
+    <g transform="translate(0 -6)">
+      <circle cx="10" cy="10" r="6" fill="#F26B3A"/>
+      <text x="32" y="15" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Inter, sans-serif" font-size="14" fill="#F8C246" letter-spacing="3" font-weight="600">CLAUDE IMPACT LAB RIO  ·  2026</text>
+    </g>
+
+    <text x="0" y="70" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Inter, sans-serif" font-size="68" font-weight="800" fill="#FFFFFF" letter-spacing="-1.5">ACS Inteligente</text>
+
+    <rect x="0" y="86" width="0" height="3" fill="url(#accent)" rx="1.5">
+      <animate attributeName="width" from="0" to="380" dur="1.2s" begin="0.2s" fill="freeze"/>
+    </rect>
+
+    <text x="0" y="138" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Inter, sans-serif" font-size="20" fill="#CFE3F5" font-weight="400">Inteligência no Território &#183; apoio à reunião semanal das equipes de Saúde da Família</text>
+  </g>
+
+  <g transform="translate(70 290)" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Inter, sans-serif">
+    <g>
+      <text x="0" y="0" font-size="34" font-weight="800" fill="#F8C246">50%</text>
+      <text x="0" y="20" font-size="11" fill="#CFE3F5" letter-spacing="1">cadastros sem visita / ano</text>
+    </g>
+    <g transform="translate(230 0)">
+      <text x="0" y="0" font-size="34" font-weight="800" fill="#F8C246">54%</text>
+      <text x="0" y="20" font-size="11" fill="#CFE3F5" letter-spacing="1">pós-urgência sem followup 30d</text>
+    </g>
+    <g transform="translate(540 0)">
+      <text x="0" y="0" font-size="34" font-weight="800" fill="#F8C246">43%</text>
+      <text x="0" y="20" font-size="11" fill="#CFE3F5" letter-spacing="1">pacientes “fantasma” no ano</text>
+    </g>
+  </g>
+
+  <rect x="0" y="356" width="1200" height="4" fill="url(#accent)"/>
+</svg>

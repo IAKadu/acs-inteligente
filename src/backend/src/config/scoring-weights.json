@@ -1,0 +1,56 @@
+{
+  "_doc": "Pesos portados de _inbox/regua-visitas-do-dev.yaml. Escala 0-250+, sem cap. Ver docs/analises-territorio/solucao_01_score_de_risco.md.",
+
+  "clinical": {
+    "gestante":              40,
+    "crianca_0_6":           35,
+    "hipertenso_e_diabetico":30,
+    "hipertenso":            20,
+    "diabetico":             20,
+    "idoso_66_mais":         15
+  },
+
+  "social": {
+    "situacao_vulnerabilidade": 10
+  },
+
+  "temporal_regua": {
+    "_doc": "Mínimo de visitas/ano por perfil (régua do Rio).",
+    "crianca_0_6":            7,
+    "gestante":               6,
+    "hipertenso":             4,
+    "diabetico":              4,
+    "hipertenso_e_diabetico": 4,
+    "idoso_66_mais":          4,
+    "default":                2,
+    "peso_por_visita_faltante": 8
+  },
+
+  "urgencia": {
+    "_doc": "Pesos cumulativos por janela. n_urg_30d * peso_30d + n_urg_90d * peso_90d + ...",
+    "peso_30d":  25,
+    "peso_90d":  15,
+    "peso_180d": 8,
+    "peso_ano":  3
+  },
+
+  "agendamento": {
+    "tem_agendamento_futuro": 10
+  },
+
+  "gatilho": {
+    "alerta_critico_aberto": 20
+  },
+
+  "bonus_invisivel": {
+    "alto_risco_sem_visita": 30,
+    "crise_sem_vinculo":     50
+  },
+
+  "faixas_prioridade": {
+    "_doc": "Limiares inclusive-low para classificar score em prioridade.",
+    "critico":  80,
+    "urgente":  50,
+    "atencao":  20
+  }
+}

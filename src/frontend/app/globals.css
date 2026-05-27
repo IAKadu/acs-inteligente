@@ -1,0 +1,250 @@
+@import "tailwindcss";
+
+/* Cera Pro font face */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('/fonts/CeraPro-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('/fonts/CeraPro-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('/fonts/CeraPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('/fonts/CeraPro-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('/fonts/CeraPro-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('/fonts/CeraPro-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Brand tokens */
+:root {
+  /* Core palette */
+  --blue-primary:   #004a80;
+  --blue-secondary: #00508a;
+  --blue-dark:      #003660;
+  --blue-light:     #1863dc;
+  --cyan-accent:    #00c0f4;
+  --green-accent:   #0bb975;
+
+  /* Neutrals */
+  --grey-bar:       #363636;
+  --grey-card:      #ededed;
+  --grey-mid:       #cac7c7;
+  --grey-text:      #333333;
+  --grey-dark:      #181818;
+  --white:          #ffffff;
+
+  /* Priority palette */
+  --priority-1: #dc3545; /* Urgente */
+  --priority-2: #fd7e14; /* Alto */
+  --priority-3: #ffc107; /* Médio */
+  --priority-4: #28a745; /* Rotina */
+
+  /* Spacing 8pt */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.12);
+  --shadow-md:  0 4px 12px rgba(0,74,128,.15);
+  --shadow-lg:  0 8px 32px rgba(0,74,128,.20);
+}
+
+/* Tailwind v4 theme extension */
+@theme inline {
+  --font-sans: 'Cera Pro', 'Segoe UI', Arial, sans-serif;
+
+  --color-brand-blue-primary:   var(--blue-primary);
+  --color-brand-blue-secondary: var(--blue-secondary);
+  --color-brand-blue-dark:      var(--blue-dark);
+  --color-brand-blue-light:     var(--blue-light);
+  --color-brand-cyan:           var(--cyan-accent);
+  --color-brand-green:          var(--green-accent);
+
+  --color-priority-1:           var(--priority-1);
+  --color-priority-2:           var(--priority-2);
+  --color-priority-3:           var(--priority-3);
+  --color-priority-4:           var(--priority-4);
+
+  --color-grey-bar:             var(--grey-bar);
+  --color-grey-card:            var(--grey-card);
+  --color-grey-mid:             var(--grey-mid);
+  --color-grey-text:            var(--grey-text);
+  --color-grey-dark:            var(--grey-dark);
+}
+
+html, body {
+  font-family: 'Cera Pro', 'Segoe UI', Arial, sans-serif;
+  color: var(--grey-dark);
+  background: var(--white);
+}
+
+/* Reusable utility classes */
+.t-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--grey-text);
+}
+
+.t-section-label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--blue-primary);
+}
+
+.t-section-title {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--blue-secondary);
+  line-height: 1.2;
+}
+
+.t-nav-link {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Type scale */
+.t-h2 {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--blue-secondary);
+  line-height: 1.25;
+}
+
+.t-h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blue-primary);
+  line-height: 1.35;
+}
+
+.t-body {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--grey-text);
+  line-height: 1.6;
+}
+
+.t-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--grey-text);
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.badge-primary  { background: var(--blue-primary);   color: #fff; }
+.badge-cyan     { background: var(--cyan-accent);     color: var(--blue-dark); }
+.badge-green    { background: var(--green-accent);    color: #fff; }
+.badge-warning  { background: var(--priority-3);      color: #333; }
+.badge-danger   { background: var(--priority-1);      color: #fff; }
+
+/* Priority rows (for tables) */
+.priority-row   { padding: 10px 14px; border-radius: var(--radius-sm); }
+.priority-row.p1 { background: rgba(220,53,69,.08);  border-left: 3px solid var(--priority-1); }
+.priority-row.p2 { background: rgba(253,126,20,.08); border-left: 3px solid var(--priority-2); }
+.priority-row.p3 { background: rgba(255,193,7,.08);  border-left: 3px solid var(--priority-3); }
+.priority-row.p4 { background: rgba(40,167,69,.08);  border-left: 3px solid var(--priority-4); }
+
+.priority-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: opacity 0.15s, box-shadow 0.15s;
+  border: none;
+  text-decoration: none;
+}
+.btn:hover { opacity: 0.88; }
+
+.btn-primary   { background: var(--blue-primary);   color: #fff; }
+.btn-secondary { background: transparent; color: var(--blue-primary); border: 2px solid var(--blue-primary); }
+.btn-cta       { background: var(--cyan-accent);    color: var(--blue-dark); }
+.btn-green     { background: var(--green-accent);   color: #fff; }
+
+/* Patient card */
+.card-patient {
+  background: #fff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--grey-mid);
+  box-shadow: var(--shadow-sm);
+  padding: 20px;
+  transition: box-shadow 0.15s;
+}
+.card-patient:hover { box-shadow: var(--shadow-md); }
