@@ -35,6 +35,9 @@ Resultado: urgências evitáveis, internações desnecessárias, e vidas em risc
 
 ---
 
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/7e9afb97-7c1d-449d-a946-f40ab118eb4c" />
+
+
 ## Funcionalidades
 
 ### 📊 Dashboard e KPIs
