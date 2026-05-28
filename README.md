@@ -342,42 +342,6 @@ erDiagram
 
 ---
 
-## Screenshots
-
-> Adicione os prints em `docs/screenshots/` — veja [`docs/screenshots/README.md`](docs/screenshots/README.md) para instruções.
-
-### Dashboard — Visão Geral
-![Dashboard](docs/screenshots/01-dashboard.png)
-
-### Agenda Diária com Mapa
-![Agenda](docs/screenshots/02-agenda.png)
-
-### Agenda no Celular
-![Agenda Mobile](docs/screenshots/03-agenda-mobile.png)
-
-### Lista de Pacientes Priorizados
-![Pacientes](docs/screenshots/04-pacientes.png)
-
-### Detalhe do Paciente
-![Detalhe](docs/screenshots/05-paciente-detalhe.png)
-
-### Registrar Visita — Busca de Paciente
-![Registrar Step 1](docs/screenshots/06-registrar.png)
-
-### Registrar Visita — Formulário + Captura por Áudio
-![Registrar Step 2](docs/screenshots/07-registrar-form.png)
-
-### Modo Offline — Relato Salvo Localmente
-![Offline](docs/screenshots/09-registrar-offline.png)
-
-### Chat com IA
-![Chat](docs/screenshots/10-chat.png)
-
-### Simulador de Score
-![Score](docs/screenshots/11-score.png)
-
----
-
 ## Pré-requisitos
 
 - **Node.js** ≥ 20 (`node --version`)
