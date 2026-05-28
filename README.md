@@ -23,6 +23,19 @@ O problema: **não existe priorização inteligente**. O ACS visita por ordem ge
 
 Resultado: urgências evitáveis, internações desnecessárias, e vidas em risco.
 
+## Por que importa (impacto quantificado)
+
+EDA completo do dataset SMS Rio em [docs/analise-completa-dataset-saude.md](docs/analise-completa-dataset-saude.md).
+
+| Indicador | Número | O que isso significa |
+|---|---|---|
+| Cadastros sem visita em 1 ano | **48.838 / 97.938 (50%)** | Metade do território é invisível pra equipe |
+| Pacientes pós-urgência sem followup 30d | **54,4%** (mediana 36d) | Janela crítica de adesão perdida |
+| Pacientes "fantasma" (sem visita E sem evento clínico) | **43%** | Nem ACS sabe que existem, nem sistema viu |
+| Idosos 66+ sem visita no ano | **12.636** | População de altíssimo risco invisível |
+
+A solução **não cria novo trabalho** — reorganiza o trabalho que já é feito, com priorização orientada por dados e captura no canal que o ACS já usa todo dia.
+
 ## A Solução
 
 **ACS Inteligente** é um sistema PWA mobile-first que usa IA para:
@@ -748,12 +761,19 @@ Os arquivos Parquet devem ser obtidos via [claude-impact-lab-saude](https://gith
 
 Desenvolvido durante o **Claude Impact Lab Rio 2026** (Hackathon Anthropic):
 
-- **Kadu Bruns** — Desenvolvimento full-stack e integração Claude
-- **Peter Flag** — Arquitetura de dados e análise territorial
-- **Gabriel Tyll** — Backend e scoring engine
-- **Ricardo Brigante** — UX e design system
-- **Vitor Medeiros** — Análise de dados e modelos de risco
+- **Kadu Bruns** — kadubruns@gmail.com
+- **Peter Flag** — @peterflagdooor
+- **Gabriel Tyll** — gabriel.tyll@gmail.com
+- **Vitor Medeiros** — vitoropdm@gmail.com
+- **Ricardo Brigante** — ricardo.brigante@gmail.com
 
+## Documentação técnica
+
+- [Análise completa do dataset](docs/analise-completa-dataset-saude.md)
+- [Análises temáticas + soluções (15 docs)](docs/analises-territorio/README.md)
+- [Briefing oficial do desafio](_inbox/briefing-acs-vulnerabilidade.md)
+- [Transcrição do Q&A com SMS-Rio](_inbox/transcricao-qa-sms-rio.md)
+  
 ---
 
 ## Licença
