@@ -770,9 +770,6 @@ Desenvolvido durante o **Claude Impact Lab Rio 2026** (Hackathon Anthropic):
 ## Documentação técnica
 
 - [Análise completa do dataset](docs/analise-completa-dataset-saude.md)
-- [Análises temáticas + soluções (15 docs)](docs/analises-territorio/README.md)
-- [Briefing oficial do desafio](_inbox/briefing-acs-vulnerabilidade.md)
-- [Transcrição do Q&A com SMS-Rio](_inbox/transcricao-qa-sms-rio.md)
   
 ---
 
