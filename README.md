@@ -4,11 +4,14 @@
 
 > Desenvolvido para o **Claude Impact Lab Rio 2026** — Hackathon Anthropic × Secretaria Municipal de Saúde do Rio de Janeiro
 
+[![Demo](https://img.shields.io/badge/🌐%20Demo%20ao%20vivo-acs--inteligente.vercel.app-blue)](https://acs-inteligente.vercel.app)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
 [![Hono](https://img.shields.io/badge/Hono-4-orange)](https://hono.dev)
 [![Claude](https://img.shields.io/badge/Claude-Sonnet%204.6%20+%20Haiku%204.5-blue?logo=anthropic)](https://anthropic.com)
 [![Supabase](https://img.shields.io/badge/Supabase-Postgres-green?logo=supabase)](https://supabase.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://typescriptlang.org)
+
+**🌐 [https://acs-inteligente.vercel.app](https://acs-inteligente.vercel.app)**
 
 ---
 

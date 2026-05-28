@@ -25,4 +25,4 @@ services:
       - key: DATABASE_URL
         sync: false
       - key: FRONTEND_URL
-        sync: false   # ex: https://impact-acs-rio.vercel.app
+        sync: false   # https://acs-inteligente.vercel.app
