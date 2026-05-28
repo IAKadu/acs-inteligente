@@ -452,4 +452,4 @@ Todos rodam com `.venv/bin/python scripts/<nome>.py` a partir da raiz do repo.
 
 ---
 
-*Documento gerado a partir de EDAs sucessivos durante o Claude Impact Lab 2026, equipe Peter Flag.*
+*Documento gerado a partir de EDAs sucessivos durante o Claude Impact Lab 2026.*
